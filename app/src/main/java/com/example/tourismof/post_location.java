@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,7 +45,13 @@ public class post_location extends AppCompatActivity {
                 newintent.putExtra("price", Price);
                 newintent.putExtra("description", description);
                 newintent.putExtra("location", location.getText().toString());
-                startActivity(newintent);
+                if(location.getText().toString().isEmpty()){
+
+                    Toast.makeText(getApplicationContext(), "Please Enter Location", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    startActivity(newintent);
+                }
             }
         });
 

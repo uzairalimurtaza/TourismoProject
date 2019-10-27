@@ -34,7 +34,13 @@ public class Price extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendUserToPostActivity();
+
+                if(Price.getText().toString().isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Please Enter Price", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    sendUserToPostActivity();
+                }
             }
         });
 

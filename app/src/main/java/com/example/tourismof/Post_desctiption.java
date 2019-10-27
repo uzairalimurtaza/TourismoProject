@@ -36,7 +36,12 @@ public class Post_desctiption extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                sendUserToLocationActivity();
+                if(description.getText().toString().isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Please Enter description", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    sendUserToLocationActivity();
+                }
             }
         });
     }
