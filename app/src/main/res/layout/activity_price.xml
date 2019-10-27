@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff">
+
+
+
+    <RelativeLayout
+        android:id="@+id/first_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/first_linear"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="#C03939">
+
+
+            <TextView
+                android:id="@+id/Price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Price"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:gravity="center"
+                android:textSize="45sp"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/post_price"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/first_linear"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="#C03939"
+            android:drawablePadding="5dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:foregroundTint="#fff"
+            android:hint="Add Price "
+            android:inputType="textMultiLine"
+            android:textColor="#000000"
+            android:textColorHint="#9A8585" />
+
+
+
+        <Button
+            android:id="@+id/price_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="49dp"
+            android:layout_marginTop="352dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button"
+            android:text="Next"
+            android:textColor="#fff" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
